@@ -78,3 +78,86 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* custom */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-columns {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex-grow: 1;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 8px 32px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+}
+
+@media (min-width: 600px) {
+  /**/
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.big {
+  font-size: 4rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  position: absolute;
+  top: -20px;
+}
+
+input[type="search"] {
+  padding-inline: 8px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid #d1d5db;
+  border-right: none;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  margin-inline: 42px;
+}
+
+.header {
+  padding-block: 64px;
+  gap: 16px;
+}
+
+.header-img {
+  background: url("./images/header.png");
+  background-size: cover;
+}
