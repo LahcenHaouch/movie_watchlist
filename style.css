@@ -161,3 +161,24 @@ input[type="search"] {
   background: url("./images/header.png");
   background-size: cover;
 }
+
+#movie-list {
+  margin-top: 56px;
+  list-style: none;
+  padding-left: 0;
+}
+
+#movie-list > li {
+  display: flex;
+
+  gap: 16px;
+}
+
+#movie-list > li > img {
+  width: 100px;
+  height: 150px;
+}
+
+#movie-list h2 {
+  font-size: 1.1rem;
+}
