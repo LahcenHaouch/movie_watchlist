@@ -1,7 +1,23 @@
 const watchListEl = document.querySelector("#watch-list");
-const watchList = JSON.parse(localStorage.getItem("watch-list")) || [];
+let watchList = JSON.parse(localStorage.getItem("watch-list")) || [];
+
+watchListEl.addEventListener("click", (event) => {
+  if (!event.target.name === "remove-from -watchlist") {
+    return;
+  }
+
+  watchList = watchList.filter(
+    (element) => element.title !== event.target.dataset.title
+  );
+
+  localStorage.setItem("watch-list", JSON.stringify(watchList));
+
+  renderWatchList(watchList);
+});
 
 function renderWatchList(watchList) {
+  watchListEl.innerHTML = "";
+
   if (watchList?.length < 1) {
     return;
   }
