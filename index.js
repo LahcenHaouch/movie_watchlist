@@ -14,6 +14,8 @@ movieListEl.addEventListener("click", (event) => {
 
   const watchList = JSON.parse(localStorage.getItem(WATCH_LIST_KEY)) || [];
 
+  console.log({ watchList });
+
   if (watchList.find((element) => element.title === title)) {
     return;
   }
@@ -36,9 +38,9 @@ formEl.addEventListener("submit", (event) => {
     .then((data) => {
       movieListEl.innerHTML = "";
 
-      const { Search } = data;
+      const { Search: search } = data;
 
-      Search.forEach((element) => {
+      search.forEach((element) => {
         const { Poster, Title, Year } = element;
 
         const li = document.createElement("li");
