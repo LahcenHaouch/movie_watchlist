@@ -162,24 +162,24 @@ input[type="search"] {
   background-size: cover;
 }
 
-#movie-list {
+ul {
   margin-top: 56px;
   list-style: none;
   padding-left: 0;
 }
 
-#movie-list > li {
+ul > li {
   display: flex;
   gap: 24px;
   flex-basis: 100%;
 }
 
-#movie-list > li > img {
+ul > li > img {
   width: 100px;
   height: 150px;
 }
 
-#movie-list h2 {
+ul h2 {
   font-size: 1.1rem;
 }
 
